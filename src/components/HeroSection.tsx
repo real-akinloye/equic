@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import dashboardPreview from "@/assets/dashboard-preview.png";
+import dashboardEsop from "@/assets/dashboard-esop.png";
+import dashboardGrants from "@/assets/dashboard-grants.png";
 
 const HeroSection = () => {
   return (
@@ -29,12 +30,19 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right side - Dashboard Image */}
+          {/* Right side - Stacked Dashboard Images */}
           <div className="relative">
             <div className="rounded-none border border-border shadow-2xl overflow-hidden">
               <img
-                src={dashboardPreview}
-                alt="Equity management dashboard showing cap table, valuation charts, and stakeholder overview"
+                src={dashboardEsop}
+                alt="ESOP Infrastructure dashboard showing pool distribution, vesting overview, and compliance metrics"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="rounded-none border border-border shadow-2xl overflow-hidden mt-4">
+              <img
+                src={dashboardGrants}
+                alt="Grant Ledger showing stakeholder equity allocations, vesting status, and execution dates"
                 className="w-full h-auto"
               />
             </div>
