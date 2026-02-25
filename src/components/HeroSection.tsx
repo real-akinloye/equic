@@ -14,7 +14,7 @@ const HeroSection = () => {
                 Equity Intelligence Platform
               </p>
               <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] text-foreground">
-                Equity Management For Modern Teams
+                Spreadsheet on holidays
               </h1>
             </div>
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
