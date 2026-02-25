@@ -24,8 +24,14 @@ const HeroSection = () => {
               <Button size="lg" className="px-8 py-6 text-base font-semibold">
                 Get Started
               </Button>
-              <Button size="lg" variant="outline" className="px-8 py-6 text-base font-semibold">
-                Book a Demo
+              <Button size="lg" variant="outline" className="px-8 py-6 text-base font-semibold" asChild>
+                <a
+                  href="https://wa.me/2348110345944?text=Hi%20Equical%2C%20I%27d%20like%20to%20book%20a%20demo%20of%20your%20equity%20management%20platform.%20Please%20let%20me%20know%20the%20available%20slots."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a Demo
+                </a>
               </Button>
             </div>
           </div>
