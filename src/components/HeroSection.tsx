@@ -14,11 +14,11 @@ const HeroSection = () => {
                 Equity Intelligence Platform
               </p>
               <h1 className="text-5xl lg:text-6xl font-bold leading-[1.1] text-foreground">
-                Spreadsheet on holidays
+                Equity Management For Modern Teams
               </h1>
             </div>
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              The only equity platform for Startups, Venture Capitals and Employees.
+              Spreadsheet on holidays
             </p>
             <div className="flex gap-4">
               <Button size="lg" className="px-8 py-6 text-base font-semibold">
