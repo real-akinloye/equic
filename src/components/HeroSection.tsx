@@ -18,7 +18,7 @@ const HeroSection = () => {
               </h1>
             </div>
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              managinng ownership the right way.
+              managing ownership the right way.
             </p>
             <div className="flex gap-4">
               <Button size="lg" className="px-8 py-6 text-base font-semibold">
