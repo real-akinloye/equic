@@ -40,40 +40,15 @@ const CapTableSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Video Demo */}
-          <div className="rounded-none border-2 border-foreground/20 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden">
-            <video
-              src={captableDemo}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-auto"
-            />
-          </div>
-
-          {/* Right - Feature Cards */}
-          <div className="space-y-6">
-            {features.map((feature) => (
-              <div
-                key={feature.title}
-                className="flex gap-5 p-6 bg-background border border-border rounded-none shadow-sm"
-              >
-                <div className="flex-shrink-0 w-11 h-11 bg-primary/10 flex items-center justify-center rounded-none">
-                  <feature.icon className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-1">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="rounded-none border-2 border-foreground/20 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden">
+          <video
+            src={captableDemo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-auto"
+          />
         </div>
       </div>
     </section>
