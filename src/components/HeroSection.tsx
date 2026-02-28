@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import dashboardEsop from "@/assets/dashboard-esop.png";
 import dashboardGrants from "@/assets/dashboard-grants.png";
 import logoEic from "@/assets/logo-eic.png";
-import logoFate from "@/assets/logo-fate.svg";
+
 import logoIaeko from "@/assets/logo-iaeko.webp";
 import logoExtra from "@/assets/logo-extra.avif";
 
@@ -43,19 +43,19 @@ const HeroSection = () => {
             <div className="pt-4 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
-                  <span className="w-8 h-8 rounded-full bg-primary inline-block border-2 border-background" />
-                  <span className="w-8 h-8 rounded-full bg-primary/70 inline-block border-2 border-background" />
-                  <span className="w-8 h-8 rounded-full bg-primary/40 inline-block border-2 border-background" />
+                  <span className="w-10 h-10 rounded-full bg-background border-2 border-border inline-flex items-center justify-center overflow-hidden">
+                    <img src={logoEic} alt="Eko Innovation Centre" className="w-6 h-6 object-contain" />
+                  </span>
+                  <span className="w-10 h-10 rounded-full bg-background border-2 border-border inline-flex items-center justify-center overflow-hidden">
+                    <img src={logoIaeko} alt="IAEKO" className="w-6 h-6 object-contain" />
+                  </span>
+                  <span className="w-10 h-10 rounded-full bg-background border-2 border-border inline-flex items-center justify-center overflow-hidden">
+                    <img src={logoExtra} alt="Partner logo" className="w-6 h-6 object-contain" />
+                  </span>
                 </div>
                 <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  Powering Equity For 500+ High-Growth Companies
+                  Powering Equity For High-Growth Companies
                 </p>
-              </div>
-              <div className="flex items-center gap-8 opacity-60 grayscale">
-                <img src={logoEic} alt="Eko Innovation Centre" className="h-8 object-contain" />
-                <img src={logoFate} alt="FATE Foundation" className="h-8 object-contain" />
-                <img src={logoIaeko} alt="IAEKO" className="h-6 object-contain" />
-                <img src={logoExtra} alt="Partner logo" className="h-8 object-contain" />
               </div>
             </div>
           </div>
