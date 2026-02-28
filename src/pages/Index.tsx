@@ -1,11 +1,11 @@
 import HeroSection from "@/components/HeroSection";
-import PainPointsSection from "@/components/PainPointsSection";
+import CapTableSection from "@/components/CapTableSection";
 
 const Index = () => {
   return (
     <div className="bg-background">
       <HeroSection />
-      <PainPointsSection />
+      <CapTableSection />
     </div>
   );
 };
