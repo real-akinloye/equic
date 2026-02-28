@@ -54,7 +54,7 @@ const HeroSection = () => {
                   </span>
                 </div>
                 <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  Powering Equity For High-Growth Companies
+                  Powering High-Growth Companies
                 </p>
               </div>
             </div>
