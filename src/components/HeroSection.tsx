@@ -62,20 +62,16 @@ const HeroSection = () => {
 
           {/* Right side - Stacked Dashboard Images */}
           <div className="relative">
-            <div className="rounded-none border-2 border-foreground/20 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden">
-              <img
-                src={dashboardEsop}
-                alt="ESOP Infrastructure dashboard showing pool distribution, vesting overview, and compliance metrics"
-                className="w-full h-auto contrast-[1.1] saturate-[1.15]"
-              />
-            </div>
-            <div className="rounded-none border-2 border-foreground/20 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden mt-4">
-              <img
-                src={dashboardGrants}
-                alt="Grant Ledger showing stakeholder equity allocations, vesting status, and execution dates"
-                className="w-full h-auto contrast-[1.1] saturate-[1.15]"
-              />
-            </div>
+            <img
+              src={dashboardEsop}
+              alt="ESOP Infrastructure dashboard showing pool distribution, vesting overview, and compliance metrics"
+              className="w-full h-auto contrast-[1.1] saturate-[1.15]"
+            />
+            <img
+              src={dashboardGrants}
+              alt="Grant Ledger showing stakeholder equity allocations, vesting status, and execution dates"
+              className="w-full h-auto contrast-[1.1] saturate-[1.15] mt-4"
+            />
           </div>
         </div>
       </div>
