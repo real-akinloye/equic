@@ -40,16 +40,14 @@ const CapTableSection = () => {
           </p>
         </div>
 
-        <div className="rounded-none border-2 border-foreground/20 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] overflow-hidden">
-          <video
-            src={captableDemo}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-auto"
-          />
-        </div>
+        <video
+          src={captableDemo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-auto"
+        />
       </div>
     </section>
   );
