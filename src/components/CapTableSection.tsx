@@ -40,14 +40,17 @@ const CapTableSection = () => {
           </p>
         </div>
 
-        <video
-          src={captableDemo}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-auto"
-        />
+        <div className="overflow-hidden">
+          <video
+            src={captableDemo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-auto"
+            style={{ clipPath: 'inset(0 3% 0 15%)' }}
+          />
+        </div>
       </div>
     </section>
   );
