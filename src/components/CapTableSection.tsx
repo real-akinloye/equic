@@ -48,7 +48,7 @@ const CapTableSection = () => {
             muted
             playsInline
             className="w-full h-auto"
-            style={{ clipPath: 'inset(0 3% 0 15%)' }}
+            style={{ clipPath: 'inset(6% 3% 0 5%)' }}
           />
         </div>
       </div>
