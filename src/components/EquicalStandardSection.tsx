@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Coins, Brain, Unlock } from "lucide-react";
+import financialModelling from "@/assets/financial-modelling.png";
 
 const tabs = [
   {
@@ -142,8 +143,15 @@ const EquicalStandardSection = () => {
             {activeTab === "ai" && (
               <div className="space-y-4">
                 <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-6">
-                  AI Assistant
+                  AI Financial Modelling
                 </p>
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={financialModelling}
+                    alt="AI-powered financial modelling for employee ESOP grants showing estimated value, vesting progress, and ownership details"
+                    className="w-64 h-auto"
+                  />
+                </div>
                 <div className="space-y-3">
                   <div className="bg-primary/10 px-4 py-3 border-l-2 border-primary">
                     <p className="text-sm text-foreground">
@@ -161,20 +169,11 @@ const EquicalStandardSection = () => {
                       . Your ESOP pool would adjust to 8.4%.
                     </p>
                   </div>
-                  <div className="bg-primary/10 px-4 py-3 border-l-2 border-primary">
-                    <p className="text-sm text-foreground">
-                      "Is my option pool compliant in Nigeria?"
-                    </p>
-                  </div>
-                  <div className="bg-background px-4 py-3 border border-border">
-                    <p className="text-sm text-muted-foreground">
-                      ✓ Your ESOP structure complies with Nigerian SEC
-                      regulations. No additional filings required at this stage.
-                    </p>
-                  </div>
                 </div>
               </div>
             )}
+
+
 
             {activeTab === "liquidity" && (
               <div className="space-y-4">

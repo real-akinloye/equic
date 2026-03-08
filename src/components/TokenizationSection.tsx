@@ -1,4 +1,5 @@
 import { Link2, ShieldCheck, Zap, Landmark } from "lucide-react";
+import tokenizationPreview from "@/assets/tokenization-preview.png";
 
 const features = [
   {
@@ -45,6 +46,15 @@ const TokenizationSection = () => {
             Powered by Pluto, our on-chain module built on Base (L2). Tokens
             represent real ownership and can be redeemed.
           </p>
+        </div>
+
+        {/* Preview Image */}
+        <div className="mb-16">
+          <img
+            src={tokenizationPreview}
+            alt="Equity Tokenization Simulator showing token pricing, bridged liquidity, stablecoin vault, and institutional distribution on Base L2"
+            className="w-full max-w-4xl mx-auto h-auto contrast-[1.05] saturate-[1.1]"
+          />
         </div>
 
         {/* Feature Cards */}
