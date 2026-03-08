@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import ESOPDashboard from "@/components/ESOPDashboard";
-import GrantLedger from "@/components/GrantLedger";
+import dashboardEsop from "@/assets/dashboard-esop.png";
+import dashboardGrants from "@/assets/dashboard-grants.png";
 import logoFate from "@/assets/logo-fate.svg";
+
 import logoIaeko from "@/assets/logo-iaeko.webp";
 import logoExtra from "@/assets/logo-extra.avif";
 
@@ -60,9 +61,17 @@ const HeroSection = () => {
           </div>
 
           {/* Right side - Stacked Dashboard Images */}
-          <div className="space-y-4">
-            <ESOPDashboard />
-            <GrantLedger />
+          <div className="relative">
+            <img
+              src={dashboardEsop}
+              alt="ESOP Infrastructure dashboard showing pool distribution, vesting overview, and compliance metrics"
+              className="w-full h-auto contrast-[1.1] saturate-[1.15]"
+            />
+            <img
+              src={dashboardGrants}
+              alt="Grant Ledger showing stakeholder equity allocations, vesting status, and execution dates"
+              className="w-full h-auto contrast-[1.1] saturate-[1.15] mt-4"
+            />
           </div>
         </div>
       </div>
