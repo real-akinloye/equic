@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Coins, Brain, Unlock } from "lucide-react";
+import financialModelling from "@/assets/financial-modelling.png";
 
 const tabs = [
   {

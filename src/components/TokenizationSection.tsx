@@ -48,6 +48,15 @@ const TokenizationSection = () => {
           </p>
         </div>
 
+        {/* Preview Image */}
+        <div className="mb-16">
+          <img
+            src={tokenizationPreview}
+            alt="Equity Tokenization Simulator showing token pricing, bridged liquidity, stablecoin vault, and institutional distribution on Base L2"
+            className="w-full max-w-4xl mx-auto h-auto contrast-[1.05] saturate-[1.1]"
+          />
+        </div>
+
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {features.map((feature) => (
