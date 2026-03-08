@@ -172,9 +172,8 @@ const EquicalStandardSection = () => {
                 </div>
               </div>
             )}
-                </div>
-              </div>
-            )}
+
+
 
             {activeTab === "liquidity" && (
               <div className="space-y-4">
