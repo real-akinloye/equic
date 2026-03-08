@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-import dashboardEsop from "@/assets/dashboard-esop.png";
-import dashboardGrants from "@/assets/dashboard-grants.png";
+import ESOPDashboard from "@/components/ESOPDashboard";
+import GrantLedger from "@/components/GrantLedger";
 import logoFate from "@/assets/logo-fate.svg";
-
 import logoIaeko from "@/assets/logo-iaeko.webp";
 import logoExtra from "@/assets/logo-extra.avif";
 
