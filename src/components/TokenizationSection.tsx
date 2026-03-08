@@ -1,4 +1,5 @@
 import { Link2, ShieldCheck, Zap, Landmark } from "lucide-react";
+import tokenizationPreview from "@/assets/tokenization-preview.png";
 
 const features = [
   {
