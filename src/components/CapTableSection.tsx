@@ -19,7 +19,7 @@ const CapTableSection = () => {
           </p>
         </div>
 
-        <div className="overflow-hidden" ref={videoRef}>
+        <div className="overflow-hidden">
           <video
             src={captableDemo}
             autoPlay
@@ -27,11 +27,7 @@ const CapTableSection = () => {
             muted
             playsInline
             className="w-full h-auto"
-            style={{
-              clipPath: 'inset(6% 3% 0 5%)',
-              transform: isZoomed ? 'scale(1.4)' : 'scale(1)',
-              transition: 'transform 5s ease-out',
-            }}
+            style={{ clipPath: 'inset(6% 3% 0 5%)' }}
           />
         </div>
       </div>
