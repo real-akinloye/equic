@@ -1,28 +1,6 @@
-import { useEffect, useRef, useState } from "react";
 import captableDemo from "@/assets/captable-demo.mp4";
 
 const CapTableSection = () => {
-  const videoRef = useRef<HTMLDivElement>(null);
-  const [isZoomed, setIsZoomed] = useState(true);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // Start zoomed in, then animate to normal after a brief delay
-          setTimeout(() => setIsZoomed(false), 200);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <section className="py-24 bg-muted/30">
@@ -41,7 +19,7 @@ const CapTableSection = () => {
           </p>
         </div>
 
-        <div className="overflow-hidden" ref={videoRef}>
+        <div className="overflow-hidden">
           <video
             src={captableDemo}
             autoPlay
@@ -49,11 +27,7 @@ const CapTableSection = () => {
             muted
             playsInline
             className="w-full h-auto"
-            style={{
-              clipPath: 'inset(6% 3% 0 5%)',
-              transform: isZoomed ? 'scale(1.4)' : 'scale(1)',
-              transition: 'transform 5s ease-out',
-            }}
+            style={{ clipPath: 'inset(6% 3% 0 5%)' }}
           />
         </div>
       </div>
